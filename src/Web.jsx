@@ -2,8 +2,8 @@ import React from 'react';
 import tabletImg from '../public/img/champions-screenshot.png';
 
 export default () => (
-  <div className="columns">
-    <div className="column">
+  <div className="columns is-centered">
+    <div className="column is-4">
       <div className="content">
         <h2 className="title is-5">Champions School of Real Estate Website</h2>
         <h3 className="subtitle is-6">Professional Project</h3>
@@ -42,7 +42,7 @@ export default () => (
         </ul>
       </div>
     </div>
-    <div className="column">
+    <div className="column is-4">
       <figure className="image">
         <img
           src={tabletImg}

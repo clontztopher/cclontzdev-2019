@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/About.jsx"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;;eAEe;AAAA,SAAM,kDAAN;AAAA","file":"About.21d181d1.map","sourceRoot":"../src","sourcesContent":["import React from 'react';\n\nexport default () => <div>About</div>;\n"]}

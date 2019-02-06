@@ -4,9 +4,9 @@ export default () => (
   <div className="section">
     <div className="container">
       <div className="columns">
-        <div className="column is-three-fifths is-offset-one-fifth">
-          <div className="content has-text-centered">
-            <h2 className="title is-3">About Me</h2>
+        <div className="column is-4 is-offset-4">
+          <div className="content">
+            <h2 className="title is-3 has-text-centered">About Me</h2>
             <p>
               I'm a self-taught developer currently residing in Austin, Texas.
               I've had many vocations and interests over the years but have

@@ -9,7 +9,11 @@ const iframeSrcMap = {
 export default ({ projectTitle }) => (
   <>
     <div className="columns">
-      <div className="column">
+      <div className="column is-6 is-offset-3">
+        <h2 className="title is-5">
+          {projectTitle.replace(/(^\w)/, m => m.toUpperCase())}
+        </h2>
+        <h3 className="subtitle is-6">Personal Project</h3>
         <iframe
           title="Projects"
           src={iframeSrcMap[projectTitle]}

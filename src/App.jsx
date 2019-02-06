@@ -7,9 +7,7 @@ import Index from './pages/Index';
 import Footer from './components/Footer';
 
 const Loading = props => (
-  <div>
-    {props.error ? console.log(props.error) && 'Error loading!' : 'Loading...'}
-  </div>
+  <div>{props.error ? console.log(props.error) : ''}</div>
 );
 
 let About = Loadable({
