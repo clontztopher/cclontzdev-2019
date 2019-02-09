@@ -1,11 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
 
-export default ({ location: { pathname } }) => (
+const Nav = ({ location }) => (
   <nav>
     <div>
       <NavLink to="/projects" className="has-text-dark" title="Projects">
-        {pathname.includes('projects') ? (
+        {location.pathname.includes('projects') ? (
           <span className="icon is-large has-background-warning">
             <i className="fas fa-folder-open fa-lg" />
           </span>
@@ -20,7 +20,7 @@ export default ({ location: { pathname } }) => (
       <NavLink to="/about" className="has-text-dark" title="Info">
         <span
           className={`icon is-large ${
-            pathname.includes('about') ? 'has-background-warning' : ''
+            location.pathname.includes('about') ? 'has-background-warning' : ''
           }`}>
           <i className="fas fa-user-circle fa-lg" />
         </span>
@@ -30,7 +30,7 @@ export default ({ location: { pathname } }) => (
       <NavLink to="/" className="has-text-dark">
         <span
           className={`title is-4 ${
-            pathname === '/' ? 'has-background-warning' : 'lightgrey'
+            location.pathname === '/' ? 'has-background-warning' : 'lightgrey'
           }`}>
           chris clontz
         </span>
@@ -60,3 +60,5 @@ export default ({ location: { pathname } }) => (
     </div>
   </nav>
 );
+
+export default withRouter(Nav);
