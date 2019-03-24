@@ -1,15 +1,16 @@
 import React from 'react';
 
 const iframeSrcMap = {
-  wikipedia: 'https://codesandbox.io/embed/oj92xr39pq?view=preview',
-  calculator: 'https://codesandbox.io/embed/xox8ynzkmo?view=preview',
-  quotes: 'https://codesandbox.io/embed/xl1yy0wz2q?view=preview',
+  wikipedia: 'https://codesandbox.io/embed/oj92xr39pq?view=preview&fontsize=12',
+  calculator:
+    'https://codesandbox.io/embed/xox8ynzkmo?view=preview&fontsize=12',
+  quotes: 'https://codesandbox.io/embed/xl1yy0wz2q?view=preview&fontsize=12',
 };
 
 export default ({ projectTitle }) => (
   <>
     <div className="columns">
-      <div className="column is-6 is-offset-3">
+      <div className="column">
         <h2 className="title is-5">
           {projectTitle.replace(/(^\w)/, m => m.toUpperCase())}
         </h2>
